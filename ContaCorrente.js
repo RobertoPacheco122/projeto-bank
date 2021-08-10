@@ -1,4 +1,5 @@
 export class ContaCorrente {
+    static numeroDeContas = 0
     _cliente
     _saldo = 0
 
@@ -17,6 +18,8 @@ export class ContaCorrente {
     get saldo(){
         return this._saldo
     }
+
+
 
     sacar(valor){
         if(this._saldo >= valor){
@@ -38,9 +41,11 @@ export class ContaCorrente {
         conta.depositar(valorSacado)
     }
 
+    
 
     constructor(cliente, agencia){
         this.agencia = agencia
         this._cliente = cliente
+        ContaCorrente.numeroDeContas += 1
     }
 }
