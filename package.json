@@ -1,0 +1,12 @@
+{
+  "name": "bitbank",
+  "version": "1.0.0",
+  "description": "Projeto de clientes e conta corrente",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roberto",
+  "license": "ISC",
+  "type": "module"
+}
